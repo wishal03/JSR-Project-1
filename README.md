@@ -30,3 +30,21 @@
 * A working chatbot hosted somewhere publicly accessible (CodePen, Github Pages, etc.)
 * A new git respository containing your code
 * A `README.md` file with explanations of what your bot does, what commands it responds to, the approach taken, unsolved problems, etc.
+
+
+## End Product Explanation
+* Chatbot opens up with a welcome message following which it responds back when asked specific questions. The Default reply for any input other than the specific input is "I'm sorry, but I don't understand".
+* Following the Welcome message we can input the below in sequence to see what the bot replies to each of the inputs
+		1) How are you doing Hal
+		2) I am doing fine. Whats the weather like today 
+* Approach - 
+		1) Declared all the DOM elements.
+		2) Validated each step along the way.
+		3) Created an event listner to listen to a  submit and then execute 2 functions - DavesMessage and HalsMessage.
+		4) DavesMessage - Takes the input from the input box and shows it on Daves Chat Window
+		5) HalsMessage - Takes DavesMessage and then responds to it using a condition and a timeout. 
+* Unsolved Problems - 
+		1) Leverage a for loop to iterate over a collection
+		2) Use a random component
+		3) Go above and beyond simple if/else statements
+

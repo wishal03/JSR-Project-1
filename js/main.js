@@ -1,8 +1,11 @@
 var daveInput = document.getElementById('chatInput'),
 	daveMessage = document.querySelector('.Dave-Message'),
 	halMessage = document.querySelector('.Hal-Message'),
-	myForm = document.getElementById("chatForm");
+	myForm = document.getElementById("chatForm"),
 	openingMessage = document.querySelector('.Hal-Message'),
+	classMates = ["Vishal","Me", "Myself"]
+	randomName = classMates[Math.floor(Math.random()*classMates.length)];
+	console.log(randomName);
 
 // add an event listener to the form to submit Dave's message
 //console.log(myForm);
@@ -23,6 +26,10 @@ if (message === "How are you doing Hal"){
 	halMessage.innerHTML += '<p>'+"I am doing fine,Thank You!. How about yourself?"+'</p>';}
 else if (message === "I am doing fine. Whats the weather like today"){
 	halMessage.innerHTML += '<p>'+"Overcast with chances of rain later in the afternoon."+'</p>';}
+else if (message === "Who is this"){
+	halMessage.innerHTML += '<p>'+"This is " + randomName +'</p>';}
+else {
+	halMessage.innerHTML += '<p>'+"I'm sorry, but I don't understand."+'</p>';}
 }
 myForm.addEventListener('submit', function() { 
   event.preventDefault();
