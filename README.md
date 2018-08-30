@@ -37,6 +37,7 @@
 * Following the Welcome message we can input the below in sequence to see what the bot replies to each of the inputs
 		1) How are you doing Hal
 		2) I am doing fine. Whats the weather like today 
+		3) Who is this
 * Approach - 
 		1) Declared all the DOM elements.
 		2) Validated each step along the way.
